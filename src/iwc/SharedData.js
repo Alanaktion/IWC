@@ -67,7 +67,7 @@
             if ((event.key && event.key === me._dataId) || !event.key) {
                 var serializedData = SJ.localStorage.getItem(me._dataId);
                 if (serializedData !== me._serializedData) {
-                    me._observable.fire('changed', data);
+                    me._observable.fire('changed', serializedData);
                 }
             }
         }
